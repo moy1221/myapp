@@ -40,6 +40,15 @@ $navbar-default-bg: #202020;
   background-color: #2E2F30;
 }
 
+.article-actions{
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description{
+  margin-top: 0;
+}
+
 footer{
   margin-top: 45px;
   padding-top: 5px;
@@ -60,7 +69,8 @@ footer ul{
   list-style: none;
 }
 
-footer ult li{
+footer ul li{
   float: left;
   margin-left: 15px;
 }
+
