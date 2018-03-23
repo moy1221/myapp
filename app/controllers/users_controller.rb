@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user_articles = @user.paginate(page: params[:page], per_page: 5)
+    @user_articles = @user.articles.paginate(page: params[:page], per_page: 5)
   end
 
   def update
@@ -33,7 +33,9 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @user_articles = @user.articles.paginate(page: params[:page], per_page: 5)
+  end
 
   private
 
